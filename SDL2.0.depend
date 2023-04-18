@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1681829965 source:d:\code\lol dodge\galaxy\sdl2.0\baseobject.cpp
+	"BaseObject.h"
+
+1681198651 d:\code\lol dodge\galaxy\sdl2.0\baseobject.h
+	"CommonFunc.h"
+
+1681816482 d:\code\lol dodge\galaxy\sdl2.0\commonfunc.h
+	<windows.h>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1681836166 source:d:\code\lol dodge\galaxy\sdl2.0\commonfunc.cpp
+	"CommonFunc.h"
+
+1681199568 source:d:\code\lol dodge\galaxy\sdl2.0\game_map.cpp
+	"game_map.h"
+
+1681199568 d:\code\lol dodge\galaxy\sdl2.0\game_map.h
+	"CommonFunc.h"
+	"BaseObject.h"
+
+1681826919 source:d:\code\lol dodge\galaxy\sdl2.0\imptimer.cpp
+	"impTimer.h"
+	"CommonFunc.h"
+
+1681199568 d:\code\lol dodge\galaxy\sdl2.0\imptimer.h
+
+1681827033 source:d:\code\lol dodge\galaxy\sdl2.0\mainobject.cpp
+	"MainObject.h"
+	"commonfunc.h"
+
+1681841937 d:\code\lol dodge\galaxy\sdl2.0\mainobject.h
+	"CommonFunc.h"
+	"BaseObject.h"
+	<vector>
+
+1681842335 source:d:\code\lol dodge\galaxy\sdl2.0\test.cpp
+	"commonfunc.h"
+	"BaseObject.h"
+	"game_map.h"
+	"MainObject.h"
+	"ImpTimer.h"
+	"ThreatsObject.h"
+
+1681842000 d:\code\lol dodge\galaxy\sdl2.0\threats.h
+	"CommonFunc.h"
+	"BaseObject.h"
+
+1681842180 source:d:\code\lol dodge\galaxy\sdl2.0\threatsobject.cpp
+	"ThreatsObject.h"
+
+1681842154 d:\code\lol dodge\galaxy\sdl2.0\threatsobject.h
+	"CommonFunc.h"
+	"BaseObject.h"
+
