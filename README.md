@@ -9,11 +9,13 @@ in this game , u will be a assassin whose name is TuFy, and you are stucking in 
 
 ## How to play game
 1,Press one of the allow keys to start game.
+
 2,The assassin will spawn in a land and you will control him to move to the right of the map
     press the arrow key to move
     left key to move left
     right key to move right
     up key to jump
+
 3,The game ends when the assassin hits a enemy or falling to the abyss Tips:
     practice make perfect.
 
