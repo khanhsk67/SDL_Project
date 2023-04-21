@@ -7,6 +7,9 @@ this game made by khanhs
 in this game , u will be a assassin whose name is TuFy, and you are stucking in a imaginary world with many monsters. Your mission is to survive in this world. (The game is in progress)
 ![image](https://user-images.githubusercontent.com/125454765/232876028-b46409b5-939a-43e1-9bde-d956a945a63a.png)
 
+link video demo game 
+https://drive.google.com/file/d/1f-pGrJkAvcEJ3TbTpnR1ucL5sUxtTLkv/view?usp=sharing
+
 ## How to play game
 1,Press one of the allow keys to start game.
 
