@@ -1,4 +1,3 @@
-
 #ifndef COMMON_FUNCTION_H_
 #define COMMON_FUNCTION_H_
 
@@ -7,13 +6,14 @@
 #include <vector>
 #include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include <SDL_ttf.h>
 
 static SDL_Window* g_window = NULL;
 static SDL_Renderer* g_screen = NULL;
 static SDL_Event g_event;
 
-//màn hình
+
 const int FRAMES_PER_SECOND = 25;
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 640;
@@ -54,5 +54,6 @@ namespace SDLCommonFunc
 {
     bool CheckCollision(const SDL_Rect& object1, const SDL_Rect& object2);
 }
+
 
 #endif

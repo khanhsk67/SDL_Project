@@ -1,6 +1,5 @@
 
-
-#include "impTimer.h"
+#include "ImpTimer.h"
 #include "CommonFunc.h"
 
 ImpTimer::ImpTimer()
@@ -73,4 +72,3 @@ bool ImpTimer::is_paused()
 {
   return is_paused_;
 }
-
