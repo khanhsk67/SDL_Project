@@ -1,7 +1,5 @@
 
 
-
-
 #include "game_map.h"
 
 GameMap::GameMap()

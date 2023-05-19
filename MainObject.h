@@ -4,7 +4,7 @@
 
 #include "CommonFunc.h"
 #include "BaseObject.h"
-
+#include "BulletObject.h"
 #include <vector>
 
 #define GRAVITY_SPEED 1.5
@@ -41,10 +41,20 @@ public:
   int get_y_pos() {return y_pos_;}
 
   SDL_Rect GetRectFrame();
+
+  void set_bullet_list(std::vector<BulletObject*> bullet_list)
+  {
+      p_bullet_list_ = bullet_list;
+  }
+  std::vector<BulletObject*> get_bullet_list() const {return p_bullet_list_;}
+
+  void HandleBullet(SDL_Renderer* des);
+  void RemoveBullet(const int& idx);
+
+
 private:
 
-
-
+    std::vector<BulletObject*> p_bullet_list_;
 
   int frame_;
   int status_;
@@ -55,6 +65,8 @@ private:
 
   int map_x_;
   int map_y_;
+  int inc_sp;
+  int out_of_time;
 
 
 

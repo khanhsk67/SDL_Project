@@ -5,6 +5,7 @@
 #include "MainObject.h"
 #include "ImpTimer.h"
 #include "ThreatsObject.h"
+
 BaseObject g_background;
 
 bool InitData()
@@ -79,7 +80,7 @@ std::vector<ThreatsObject*> MakeThreadList()
         ThreatsObject* p_threat = (moving_threats + i);
         if (p_threat != NULL)
         {
-            p_threat->LoadImg("img//threat_left.png", g_screen);
+            p_threat->LoadImg("img//Threat_left.png", g_screen);
             p_threat->set_clips();
             p_threat->set_type_move(ThreatsObject::MOVE_IN_SPACE_THREAT);
             p_threat->set_xpos(500 + i*500);
@@ -158,6 +159,7 @@ int main(int argc, char* argv[])
 
         Map map_data = game_map.GetMap();
 
+        p_player.HandleBullet(g_screen);
         p_player.SetMapXY(map_data.start_x_, map_data.start_y_);
         p_player.DoPlayer(map_data);
         p_player.Show(g_screen);
@@ -181,7 +183,7 @@ int main(int argc, char* argv[])
                 bool bCol = SDLCommonFunc::CheckCollision(rect_player, rect_threat);
                 if (bCol)
                 {
-                    if(MessageBox(NULL, "GAME OVER", "Info", MB_OK | MB_ICONSTOP) == IDOK)
+                    if(MessageBox(NULL, "GAME OVER", "From descendant of Thanos", MB_OK | MB_ICONSTOP) == IDOK)
                    {
                        p_threat->Free();
                        close();
@@ -191,6 +193,41 @@ int main(int argc, char* argv[])
                 }
             }
         }
+
+        std::vector<BulletObject*> bullet_arr = p_player.get_bullet_list();
+        for(int r = 0; r < bullet_arr.size();++r )
+        {
+            BulletObject* p_bullet = bullet_arr.at(r);
+            if(p_bullet != NULL)
+            {
+                for(int t = 0 ; t < threats_list.size(); ++t)
+                {
+                    ThreatsObject* obj_threats = threats_list.at(t);
+                    if(obj_threats != NULL)
+                    {
+
+                        SDL_Rect tRect;
+                        tRect.x = obj_threats ->GetRect().x;
+                        tRect.y = obj_threats ->GetRect().y;
+                        tRect.w = obj_threats ->get_width_frame();
+                        tRect.h = obj_threats ->get_height_frame();
+
+                        SDL_Rect bRect = p_bullet->GetRect();
+
+                        bool bCol = SDLCommonFunc::CheckCollision(bRect,tRect);
+
+                        if(bCol)
+                        {
+                            p_player.RemoveBullet(r);
+                            obj_threats -> Free();
+                            threats_list.erase(threats_list.begin()+ t);
+                        }
+
+                    }
+                }
+            }
+        }
+
 
         SDL_RenderPresent(g_screen);
 

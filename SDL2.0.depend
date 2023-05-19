@@ -2,43 +2,45 @@
 1681829965 source:d:\code\lol dodge\galaxy\sdl2.0\baseobject.cpp
 	"BaseObject.h"
 
-1681198651 d:\code\lol dodge\galaxy\sdl2.0\baseobject.h
+1684506156 d:\code\lol dodge\galaxy\sdl2.0\baseobject.h
 	"CommonFunc.h"
 
-1681816482 d:\code\lol dodge\galaxy\sdl2.0\commonfunc.h
+1684497873 d:\code\lol dodge\galaxy\sdl2.0\commonfunc.h
 	<windows.h>
 	<string>
 	<vector>
 	<SDL.h>
 	<SDL_image.h>
+	<SDL_mixer.h>
 	<SDL_ttf.h>
 
-1681836166 source:d:\code\lol dodge\galaxy\sdl2.0\commonfunc.cpp
-	"CommonFunc.h"
+1684313030 source:d:\code\lol dodge\galaxy\sdl2.0\commonfunc.cpp
+	"commonfunc.h"
 
-1681199568 source:d:\code\lol dodge\galaxy\sdl2.0\game_map.cpp
+1684313430 source:d:\code\lol dodge\galaxy\sdl2.0\game_map.cpp
 	"game_map.h"
 
-1681199568 d:\code\lol dodge\galaxy\sdl2.0\game_map.h
+1684313427 d:\code\lol dodge\galaxy\sdl2.0\game_map.h
 	"CommonFunc.h"
 	"BaseObject.h"
 
-1681826919 source:d:\code\lol dodge\galaxy\sdl2.0\imptimer.cpp
-	"impTimer.h"
+1684314652 source:d:\code\lol dodge\galaxy\sdl2.0\imptimer.cpp
+	"ImpTimer.h"
 	"CommonFunc.h"
 
-1681199568 d:\code\lol dodge\galaxy\sdl2.0\imptimer.h
+1684314652 d:\code\lol dodge\galaxy\sdl2.0\imptimer.h
 
-1681827033 source:d:\code\lol dodge\galaxy\sdl2.0\mainobject.cpp
+1684497874 source:d:\code\lol dodge\galaxy\sdl2.0\mainobject.cpp
 	"MainObject.h"
 	"commonfunc.h"
 
-1681841937 d:\code\lol dodge\galaxy\sdl2.0\mainobject.h
+1684497874 d:\code\lol dodge\galaxy\sdl2.0\mainobject.h
 	"CommonFunc.h"
 	"BaseObject.h"
+	"BulletObject.h"
 	<vector>
 
-1681842335 source:d:\code\lol dodge\galaxy\sdl2.0\test.cpp
+1684506156 source:d:\code\lol dodge\galaxy\sdl2.0\test.cpp
 	"commonfunc.h"
 	"BaseObject.h"
 	"game_map.h"
@@ -50,10 +52,17 @@
 	"CommonFunc.h"
 	"BaseObject.h"
 
-1681842180 source:d:\code\lol dodge\galaxy\sdl2.0\threatsobject.cpp
+1681894312 source:d:\code\lol dodge\galaxy\sdl2.0\threatsobject.cpp
 	"ThreatsObject.h"
 
 1681842154 d:\code\lol dodge\galaxy\sdl2.0\threatsobject.h
 	"CommonFunc.h"
 	"BaseObject.h"
+
+1684476939 source:d:\code\lol dodge\galaxy\sdl2.0\bulletobject.cpp
+	"BulletObject.h"
+
+1684476887 d:\code\lol dodge\galaxy\sdl2.0\bulletobject.h
+	"BaseObject.h"
+	"CommonFunc.h"
 
